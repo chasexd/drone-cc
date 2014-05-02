@@ -3,17 +3,17 @@ drone-cc
 
 `drone-cc` is a simple CCMenu component for the [Drone CI server](https://github.com/drone/drone).
 
-## Clients
+### Clients
 
 * [CCMenu](http://ccmenu.org/) (Mac)
 * [buildnotify](https://bitbucket.org/Anay/buildnotify/wiki/Home) (Unix)
 * [CCTray](http://cruisecontrolnet.org/projects/ccnet/wiki/CCTray_Download_Plugin) (Windows)
 
-## XML API
+### XML API
 
 Caveat: These were reversed-engineered from some TravisCI repos' output. I didn't bother to look for official XML spec, I'm sure there's tons of other statuses not represented. I just wanted pass/fail/building.
 
-### During Building
+#### During Building
 
     <Projects>
       <Project
@@ -26,7 +26,7 @@ Caveat: These were reversed-engineered from some TravisCI repos' output. I didn'
     </Projects>
 
 
-### Succeeded
+#### Succeeded
 
     <Projects>
       <Project
